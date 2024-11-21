@@ -1,5 +1,5 @@
 package com.stringtoint;
-// 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 
+ 
 public class StringToInt {
     public static void main(String[] args) {
         String str = "12345";  // Example input
