@@ -5,7 +5,7 @@ public class StringToInt {
         String str = "12345";  // Example input
         System.out.println(stringToInt(str));  // Convert and print result
     }
-
+ 
     public static int stringToInt(String str) {
         int result = 0, sign = 1;
 
