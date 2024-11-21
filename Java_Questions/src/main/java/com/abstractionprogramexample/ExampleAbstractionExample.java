@@ -1,4 +1,4 @@
-package com.abstractionexample;
+package com.abstractionprogramexample;
 
 abstract class Animal {
 	abstract void sound();

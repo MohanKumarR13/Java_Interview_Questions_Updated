@@ -1,4 +1,4 @@
-package com.stringtoint;
+package com.stringvaluetointvalue;
  
 public class StringConvertToIntValue {
     public static void main(String[] args) {
