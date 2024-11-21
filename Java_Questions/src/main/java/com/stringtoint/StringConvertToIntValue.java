@@ -1,6 +1,6 @@
 package com.stringtoint;
  
-public class StringToInt {
+public class StringConvertToIntValue {
     public static void main(String[] args) {
         String str = "12345";  // Example input
         System.out.println(stringToInt(str));  // Convert and print result

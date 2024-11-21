@@ -1,17 +1,13 @@
 package com.abstractionexample;
-//   
-// Abstract class
+
 abstract class Animal {
-	// Abstract method (does not have a body)
 	abstract void sound();
 
-	// Regular method
 	void sleep() {
 		System.out.println("The animal is sleeping.");
 	}
 }
 
-// Subclass (inherits from Animal)
 class Dog extends Animal {
 	void sound() {
 		System.out.println("The dog barks.");
@@ -24,7 +20,7 @@ class Cat extends Animal {
 	}
 }
 
-public class AbstractionExample {
+public class ExampleAbstractionExample {
 	public static void main(String[] args) {
 		Animal myDog = new Dog();
 		Animal myCat = new Cat();
