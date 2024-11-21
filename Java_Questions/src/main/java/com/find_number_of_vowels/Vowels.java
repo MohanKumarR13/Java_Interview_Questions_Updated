@@ -4,36 +4,59 @@ import java.util.*;
 
 public class Vowels {
 	public static void main(String[] args) {
-		HashMap<Character, Integer> vowelMap = new HashMap<>();
-		HashMap<Character, Integer> consMap = new HashMap<>();
-
-		String s = "Mohankumar Ramasamy";
+		String s = "MohanKumar13";
 		s = s.toLowerCase();
+		System.out.println(s);
+		int vowelCount = 0;
 		int others = 0;
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-
+		int consCount = 0;
+		char ch[] = s.toCharArray();
+		HashMap<Character, Integer> Vmap = new HashMap<>();
+		HashMap<Character, Integer> Cmap = new HashMap<>();
+		for (int i = 0; i < ch.length; i++) {
+			char c = ch[i];
 			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-				vowelMap.put(c, vowelMap.getOrDefault(c, 0) + 1);
+				Vmap.put(c, Vmap.getOrDefault(c, 0) + 1);
+				vowelCount++;
+				ch[i] = '*';
 			} else if (c >= 'a' && c <= 'z') {
-				consMap.put(c, consMap.getOrDefault(c, 0) + 1);
+				Cmap.put(c, Cmap.getOrDefault(c, 0) + 1);
+				consCount++;
 			} else {
 				others++;
 			}
-
 		}
-		System.out.println("Vowel Frequencies:");
-		for (Map.Entry<Character, Integer> entry : vowelMap.entrySet()) {
-			System.out.println(entry.getKey() + ": " + entry.getValue());
+		System.out.println("Print Vowels Character");
+		for (Map.Entry<Character, Integer> entry : Vmap.entrySet()) {
+			System.out.println(entry.getKey() + "=" + entry.getValue());
 		}
+		System.out.println("Print Consonants Character");
 
-		// Output the frequency of each consonant
-		System.out.println("\nConsonant Frequencies:");
-		for (Map.Entry<Character, Integer> entry : consMap.entrySet()) {
-			System.out.println(entry.getKey() + ": " + entry.getValue());
+		for (Map.Entry<Character, Integer> entry : Cmap.entrySet()) {
+			System.out.println(entry.getKey() + "=" + entry.getValue());
 		}
+		System.out.println("Print Duplicate Character");
+		for (Map.Entry<Character, Integer> entry : Cmap.entrySet()) {
+			if (entry.getValue() > 1) {
+				System.out.println(entry.getKey() + "=" + entry.getValue());
+			}
+		}
+		for (int i = 0; i < ch.length; i++) {
+			System.out.print(ch[i]);
+		}
+		System.out.println("Vowels Characters=>");
 
-		// Output the count of other characters (non-alphabetic)
-		System.out.println("\nOther characters count: " + others);
+		for (Map.Entry<Character, Integer> entry : Cmap.entrySet()) {
+			System.out.println(entry.getKey());
+		}
+		System.out.println("Consonants Characters=>");
+
+		for (Map.Entry<Character, Integer> entry : Cmap.entrySet()) {
+			System.out.println(entry.getKey());
+		}
+		System.out.println("Total No Of Vowels " + vowelCount);
+		System.out.println("Total No Of Consonants " + consCount);
+		System.out.println("Other characters count: " + others);
+		System.out.println("Modified String " + new String(ch));
 	}
 }
