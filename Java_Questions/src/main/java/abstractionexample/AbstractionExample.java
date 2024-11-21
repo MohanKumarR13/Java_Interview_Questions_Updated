@@ -1,5 +1,5 @@
 package abstractionexample;
-//   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
+//   
 // Abstract class
 abstract class Animal {
 	// Abstract method (does not have a body)
