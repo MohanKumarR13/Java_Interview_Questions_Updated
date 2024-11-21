@@ -42,7 +42,7 @@ public class Reverse_String {
 
 	public static void main(String[] args) {
 		Reverse_String reverse_String = new Reverse_String();
-		reverse_String.usingBuffer();
+	 	reverse_String.usingBuffer();
 		reverse_String.usigOwnLogic();
 		reverse_String.usingCollections();
 	}
