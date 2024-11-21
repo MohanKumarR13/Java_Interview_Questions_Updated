@@ -1,6 +1,6 @@
 package com.searchmatrix;
 
-public class SearchMatrix {
+public  class SearchMatrix {
     public static void main(String[] args) {
         // Input matrix and target value
         int[][] matrix = {
