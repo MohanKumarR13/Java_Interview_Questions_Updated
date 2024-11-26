@@ -35,13 +35,13 @@ public class StringVsIntEquals {
 		}
 
 		if (s1 == s3) {
-			System.out.println(s1 + "  is EQUAL to " + s3);
+			System.out.println(s1 + "  is EQUAL(=) to " + s3);
 		} else {
 			System.out.println(s1 + " is NOT EQUAL to " + s3);
 
 		}
 		if (s1.equals(s3)) {
-			System.out.println(s1 + "  is EQUAL to " + s3);
+			System.out.println(s1 + "  is EQUAL(equals) to " + s3);
 		} else {
 			System.out.println(s1 + " is NOT EQUAL to " + s3);
 

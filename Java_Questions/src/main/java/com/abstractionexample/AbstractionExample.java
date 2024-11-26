@@ -1,4 +1,4 @@
-package abstractionexample;
+package com.abstractionexample;
 //   
 // Abstract class
 abstract class Animal {
