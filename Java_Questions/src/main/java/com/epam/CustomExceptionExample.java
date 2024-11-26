@@ -1,4 +1,4 @@
-package epam;
+package com.epam;
 
 //Custom exception class
 class InvalidAgeException extends Exception {
